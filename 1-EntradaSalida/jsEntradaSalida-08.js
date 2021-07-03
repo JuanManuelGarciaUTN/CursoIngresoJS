@@ -6,10 +6,10 @@ ej.: "El resto es 0 ."*/
 function SacarResto()
 {
 	//declaración de variables
-	var dividendo;
-	var divisor;
+	let dividendo;
+	let divisor;
 
-	var resultado;
+	let resultado;
 
 	//logica de programación
 	dividendo = parseInt(txtIdNumeroDividendo.value);

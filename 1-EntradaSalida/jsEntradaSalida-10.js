@@ -7,7 +7,7 @@ function mostrarAumento()
 {
 	//declaracion de variables
 
-	var importe; //entrada
+	let importe; //entrada
 
 
 	//logica de programacion

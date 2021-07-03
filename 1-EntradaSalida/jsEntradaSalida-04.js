@@ -6,7 +6,7 @@ function mostrar()
 {
 	//declaracion de variables
 
-	var nombre; //entrada
+	let nombre; //entrada
 
 	//logica de programacion
 

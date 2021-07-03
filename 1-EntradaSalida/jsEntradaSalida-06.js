@@ -6,9 +6,9 @@ function sumar()
 {
 
 	//declaracion variable
-	var numero1;	//entrada
-	var numero2;	//entrada
-	var resultado; //suma de los dos numeros
+	let numero1;	//entrada
+	let numero2;	//entrada
+	let resultado; //suma de los dos numeros
 
 	//logica de programacion
 	numero1= parseInt(txtIdNumeroUno.value);

@@ -50,10 +50,10 @@ function Promedio() {
 function PrecioFinal() {
     //declaracion de variables
 
-    var precio1; //entrada
-    var precio2; //entrada
-    var precio3; //entrada
-    var precioFinal;//resultado
+    let precio1; //entrada
+    let precio2; //entrada
+    let precio3; //entrada
+    let precioFinal;//resultado
 
     //logica de programación
 

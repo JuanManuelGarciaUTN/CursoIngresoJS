@@ -5,8 +5,8 @@ function mostrar()
 {	
 	
 	//declaracion de variables
-	var nombre; //entrada nombre
-	var edad;	//entrada edad
+	let nombre; //entrada nombre
+	let edad;	//entrada edad
 
 
 

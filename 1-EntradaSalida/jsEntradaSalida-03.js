@@ -5,7 +5,7 @@ function mostrar()
 {
 	//declaracion de variables
 
-	var nombreIngresado; //entrada
+	let nombreIngresado; //entrada
 
 
 	//logica de programacion

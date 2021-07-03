@@ -8,8 +8,8 @@ function FahrenheitCentigrados ()
 
     //declaracion de variables
 
-    var fahrenheit; //entrada
-    var centrigrados; //salida
+    let fahrenheit; //entrada
+    let centrigrados; //salida
 
     //logica de programacion
 
@@ -28,8 +28,8 @@ function CentigradosFahrenheit ()
 
     //declaracion de variables
 
-    var centrigrados; //entrada
-    var fahrenheit; //salida
+    let centrigrados; //entrada
+    let fahrenheit; //salida
 
     //logica de programacion
 
