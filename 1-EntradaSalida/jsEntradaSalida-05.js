@@ -5,17 +5,21 @@ function mostrar()
 {	
 	
 	//declaracion de variables
+
 	let nombre; //entrada nombre
 	let edad;	//entrada edad
 
 
 
 	//logica de programa
-	nombre = txtIdNombre.value;
-	edad = txtIdEdad.value;
+
+	nombre = document.getElementById("txtIdNombre").value;
+	edad = document.getElementById("txtIdEdad").value;
+	
 
 
 	//Salida: mostrar en pantalla los datos de entrada
+	
 	alert("Usted se llama "+ nombre + " y tiene "+ edad +" años")
 }
 

@@ -12,10 +12,10 @@ function mostrarAumento()
 
 	//logica de programacion
 
-	importe = parseInt(txtIdImporte.value);//asigna Ingrese Importe a importe
+	importe = parseInt(document.getElementById("txtIdImporte").value);//asigna Ingrese Importe a importe
 	importe = parseInt(importe * 0.75); //descuento del 25% redondeado
 
-	
+
 	//Salida: mostrar importe con descuento en Resultado
 	
 	txtIdResultado.value = importe;

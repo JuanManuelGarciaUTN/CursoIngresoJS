@@ -16,8 +16,8 @@ function Rectangulo() {
 
     //logica de programacion
 
-    largoTerreno = parseInt(txtIdLargo.value);
-    anchoTerreno = parseInt(txtIdAncho.value);
+    largoTerreno = parseInt(document.getElementById("txtIdLargo").value);
+    anchoTerreno = parseInt(document.getElementById("txtIdAncho").value);
 
     perimetroRectangulo = largoTerreno * 2 + anchoTerreno * 2;
 
@@ -37,7 +37,7 @@ function Circulo() {
 
     //logica de programacion
 
-    radioTerreno = parseInt(txtIdRadio.value);
+    radioTerreno = parseInt(document.getElementById("txtIdRadio").value);
     perimetroCirculo = 2 * 3.14159 * radioTerreno;
 
     //salida: mostrar cantidad de alambre necesario
@@ -60,8 +60,8 @@ function Materiales() {
     //logica de programacion
 
 
-    largoTerreno = parseInt(txtIdLargo.value);
-    anchoTerreno = parseInt(txtIdAncho.value);
+    largoTerreno = parseInt(document.getElementById("txtIdLargo").value);
+    anchoTerreno = parseInt(document.getElementById("txtIdAncho").value);
 
     areaRectangulo = anchoTerreno * largoTerreno;
 

@@ -14,9 +14,11 @@ function Sumar() {
 
     //logica de programación
 
-    precio1 = parseInt(txtIdPrecioUno.value);
-    precio2 = parseInt(txtIdPrecioDos.value);
-    precio3 = parseInt(txtIdPrecioTres.value);
+    precio1 = parseInt(document.getElementById("txtIdPrecioUno").value);
+    precio2 = parseInt(document.getElementById("txtIdPrecioDos").value);
+    precio3 = parseInt(document.getElementById("txtIdPrecioTres").value);
+
+    
 
     sumaPrecios = precio1 + precio2 + precio3;
 
@@ -36,9 +38,9 @@ function Promedio() {
 
     //logica de programación
 
-    precio1 = parseInt(txtIdPrecioUno.value);
-    precio2 = parseInt(txtIdPrecioDos.value);
-    precio3 = parseInt(txtIdPrecioTres.value);
+    precio1 = parseInt(document.getElementById("txtIdPrecioUno").value);
+    precio2 = parseInt(document.getElementById("txtIdPrecioDos").value);
+    precio3 = parseInt(document.getElementById("txtIdPrecioTres").value);
 
     promedio = (precio1 + precio2 + precio3) / 3;
 
@@ -57,9 +59,9 @@ function PrecioFinal() {
 
     //logica de programación
 
-    precio1 = parseInt(txtIdPrecioUno.value);
-    precio2 = parseInt(txtIdPrecioDos.value);
-    precio3 = parseInt(txtIdPrecioTres.value);
+    precio1 = parseInt(document.getElementById("txtIdPrecioUno").value);
+    precio2 = parseInt(document.getElementById("txtIdPrecioDos").value);
+    precio3 = parseInt(document.getElementById("txtIdPrecioTres").value);
 
     precioFinal = (precio1 + precio2 + precio3) * 1.21;
 

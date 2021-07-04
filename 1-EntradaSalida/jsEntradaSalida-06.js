@@ -11,8 +11,9 @@ function sumar()
 	let resultado; //suma de los dos numeros
 
 	//logica de programacion
-	numero1= parseInt(txtIdNumeroUno.value);
-	numero2= parseInt(txtIdNumeroDos.value);
+
+	numero1 = parseInt(document.getElementById("txtIdNumeroUno").value);
+	numero2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 
 	resultado = numero1 + numero2;
 

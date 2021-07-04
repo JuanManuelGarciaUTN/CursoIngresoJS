@@ -13,7 +13,7 @@ function FahrenheitCentigrados ()
 
     //logica de programacion
 
-    fahrenheit = parseInt(txtIdTemperatura.value);
+    fahrenheit = parseInt(document.getElementById("txtIdTemperatura").value);
     centrigrados = (fahrenheit-32)*5/9;
 
     //salida: en °centigrados
@@ -33,7 +33,7 @@ function CentigradosFahrenheit ()
 
     //logica de programacion
 
-    centrigrados = parseInt(txtIdTemperatura.value);
+    centrigrados = parseInt(document.getElementById("txtIdTemperatura").value);
     fahrenheit = centrigrados*9/5+32;
 
     //salida: en °centigrados

@@ -14,7 +14,7 @@ function mostrar()
 
 	
 	//Salida: mostrar nombre en txtIdNombre
-	txtIdNombre.value = nombre;
+	document.getElementById("txtIdNombre").value = nombre;
 
 }
 
