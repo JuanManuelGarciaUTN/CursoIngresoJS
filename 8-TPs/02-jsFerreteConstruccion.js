@@ -49,13 +49,13 @@ function Materiales() {
 
     //declaracion de variables
 
-    let largoTerreno; //entrada
-    let anchoTerreno; //entrada
+    var largoTerreno; //entrada
+    var anchoTerreno; //entrada
 
-    let areaRectangulo; //ancho * alto
+    var areaRectangulo; //ancho * alto
 
-    let bolsasCemento; //area*2
-    let bolsasCal;  //area*3
+    var bolsasCemento; //area*2
+    var bolsasCal;  //area*3
 
     //logica de programacion
 

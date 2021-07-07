@@ -7,7 +7,7 @@ function mostrarAumento()
 {
 	//declaración de variables
 
-	let sueldo; //entrada
+	var sueldo; //entrada
 
 	//logica de programacion
 

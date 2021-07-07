@@ -6,10 +6,10 @@ ej.: "El resto es 0 ."*/
 function SacarResto()
 {
 	//declaración de variables
-	let dividendo;
-	let divisor;
+	var dividendo;
+	var divisor;
 
-	let resultado;
+	var resultado;
 
 	//logica de programación
 

@@ -4,7 +4,7 @@ y luego mostrarlo por 'Alert' al presionar el botón  'mostrar'*/
 function mostrar() {
 	//declaracion de variables
 
-	let nombreIngresado; //entrada
+	var nombreIngresado; //entrada
 
 
 	//logica de programacion

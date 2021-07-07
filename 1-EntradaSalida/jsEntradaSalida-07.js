@@ -6,9 +6,9 @@ ej.: "la Resta es 750"*/
 function sumar()
 {	
 	//declaracion de variables
-	let numero1; //entrada
-	let numero2; //entrada
-	let resultado; //resultado de la operacion
+	var numero1; //entrada
+	var numero2; //entrada
+	var resultado; //resultado de la operacion
 
 	//logica de programacion
 
@@ -24,9 +24,9 @@ function sumar()
 function restar()
 {
 	//declaracion de variables
-	let numero1; //entrada
-	let numero2; //entrada
-	let resultado; //resultado de la operacion
+	var numero1; //entrada
+	var numero2; //entrada
+	var resultado; //resultado de la operacion
 
 	//logica de programacion
 	numero1 = parseInt(document.getElementById("txtIdNumeroUno").value);
@@ -42,9 +42,9 @@ function restar()
 function multiplicar()
 { 
 	//declaracion de variables
-	let numero1; //entrada
-	let numero2; //entrada
-	let resultado; //resultado de la operacion
+	var numero1; //entrada
+	var numero2; //entrada
+	var resultado; //resultado de la operacion
 
 	//logica de programacion
 	numero1 = parseInt(document.getElementById("txtIdNumeroUno").value);
@@ -59,9 +59,9 @@ function multiplicar()
 function dividir()
 {
 	//declaracion de variables
-	let numero1; //entrada
-	let numero2; //entrada
-	let resultado; //resultado de la operacion
+	var numero1; //entrada
+	var numero2; //entrada
+	var resultado; //resultado de la operacion
 
 	//logica de programacion
 	numero1 = parseInt(document.getElementById("txtIdNumeroUno").value);
