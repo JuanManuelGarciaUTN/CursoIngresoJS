@@ -9,7 +9,7 @@ function mostrar() {
 
 	//logica de programacion
 
-	nombreIngresado = document.getElementById("txtIdNombre").value;
+	nombreIngresado = txtIdNombre.value;
 		//asigna a nombreIngresado el valor del ID dentro del html
 
 

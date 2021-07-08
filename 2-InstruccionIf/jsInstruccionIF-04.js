@@ -2,7 +2,7 @@ function mostrar()
 {
 	//tomo la edad  
 	
-	var edad = document.getElementById("txtIdEdad").value;
+	var edad = txtIdEdad.value;
 
 		//si edad es entre 13 y 17 inclusive
 	if(edad>=13 && edad<=17){

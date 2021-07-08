@@ -2,8 +2,10 @@ function mostrar()
 {
 	//tomo la edad  
 
+	var edad = txtIdEdad.value;
+
 		//si es igual a 15 mostrar
-	if(document.getElementById("txtIdEdad").value == 15){
+	if(edad == 15){
 		alert("niña bonita");
 	}
 

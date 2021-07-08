@@ -12,8 +12,8 @@ function sumar()
 
 	//logica de programacion
 
-	numero1 = parseInt(document.getElementById("txtIdNumeroUno").value);
-	numero2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+	numero1 = parseInt(txtIdNumeroUno.value);
+	numero2 = parseInt(txtIdNumeroDos.value);
 
 	resultado = numero1 + numero2;
 
@@ -29,8 +29,8 @@ function restar()
 	var resultado; //resultado de la operacion
 
 	//logica de programacion
-	numero1 = parseInt(document.getElementById("txtIdNumeroUno").value);
-	numero2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+	numero1 = parseInt(txtIdNumeroUno.value);
+	numero2 = parseInt(txtIdNumeroDos.value);
 
 
 	resultado = numero1 - numero2;
@@ -47,8 +47,8 @@ function multiplicar()
 	var resultado; //resultado de la operacion
 
 	//logica de programacion
-	numero1 = parseInt(document.getElementById("txtIdNumeroUno").value);
-	numero2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+	numero1 = parseInt(txtIdNumeroUno.value);
+	numero2 = parseInt(txtIdNumeroDos.value);
 
 	//Salida: mostrar en pantalla resultado
 	resultado = numero1 * numero2;
@@ -64,8 +64,8 @@ function dividir()
 	var resultado; //resultado de la operacion
 
 	//logica de programacion
-	numero1 = parseInt(document.getElementById("txtIdNumeroUno").value);
-	numero2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+	numero1 = parseInt(txtIdNumeroUno.value);
+	numero2 = parseInt(txtIdNumeroDos.value);
 
 	resultado = numero1 / numero2;
 

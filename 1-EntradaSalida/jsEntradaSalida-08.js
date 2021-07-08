@@ -13,8 +13,8 @@ function SacarResto()
 
 	//logica de programación
 
-	dividendo = parseInt(document.getElementById("txtIdNumeroDividendo").value);
-	divisor = parseInt(document.getElementById("txtIdNumeroDivisor").value);
+	dividendo = parseInt(txtIdNumeroDividendo.value);
+	divisor = parseInt(txtIdNumeroDivisor.value);
 
 	resultado = dividendo % divisor;
 

@@ -12,7 +12,7 @@ function mostrarAumento()
 
 	//logica de programacion
 
-	importe = parseInt(document.getElementById("txtIdImporte").value);//asigna Ingrese Importe a importe
+	importe = parseInt(txtIdImporte.value); //asigna Ingrese Importe a importe
 	importe = parseInt(importe * 0.75); //descuento del 25% redondeado
 
 

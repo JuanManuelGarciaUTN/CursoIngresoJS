@@ -11,7 +11,7 @@ function mostrarAumento()
 
 	//logica de programacion
 
-	sueldo = parseInt(document.getElementById("txtIdSueldo").value);
+	sueldo = parseInt(txtIdSueldo.value);
 
 	sueldo = parseInt(sueldo * 1.1); //incremento del 10% a sueldo, redondeado
 

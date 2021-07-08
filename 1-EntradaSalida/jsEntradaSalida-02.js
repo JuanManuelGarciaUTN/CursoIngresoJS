@@ -4,14 +4,18 @@ y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
 	//declaracion de variable
-	var texto; //entrada
+	var nombre; //de entrada
 
 
 	//logica del programa
-	texto = prompt("Ingrese un texto para mostrar en pantalla");
 
+		//pido al usuario ingresar nombre usando prompt
+	nombre = prompt("Ingrese un texto para mostrar en pantalla");
+		//lo que se encuentra a la derecha del = se ejecuta antes
+		//por eso primer ejecuta el prompt y luego asigna dicho valor
+		// a la variable en la izquierda, nombre
 
 	//salida en pantalla
-	alert(texto);
+	alert(nombre);
 }
 
