@@ -1,72 +1,77 @@
-/*1.	Para el departamento de facturación:
+/*
+
+1.	Para el departamento de facturación:
 A.	Ingresar tres precios de productos y mostrar la suma de los mismos.
 B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
 C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
 function Sumar() {
-    //declaracion de variables
 
-    var precio1; //entrada
-    var precio2; //entrada
-    var precio3; //entrada
+    var primerPrecio;
+    var segundoPrecio;
+    var tercerPrecio;
+    var sumaTotal;
 
-    var sumaPrecios;//resultado
+    primerPrecio = txtIdPrecioUno.value;
+    primerPrecio = parseInt(primerPrecio);
 
-    //logica de programación
+    segundoPrecio = txtIdPrecioDos.value;
+    segundoPrecio = parseInt(segundoPrecio);
 
-    precio1 = parseInt(document.getElementById("txtIdPrecioUno").value);
-    precio2 = parseInt(document.getElementById("txtIdPrecioDos").value);
-    precio3 = parseInt(document.getElementById("txtIdPrecioTres").value);
-
-    
-
-    sumaPrecios = precio1 + precio2 + precio3;
-
-    //Salida: mostrar suma de entradas en pantalla
-
-    alert("La suma de los tres precios es: " + sumaPrecios);
+    tercerPrecio = txtIdPrecioTres.value;
+    tercerPrecio = parseInt(tercerPrecio);
 
 
+    sumaTotal = primerPrecio + segundoPrecio + tercerPrecio;
+
+    alert("La suma de los tres precios es: " + sumaTotal);
 }
 function Promedio() {
-    //declaracion de variables
 
-    var precio1; //entrada
-    var precio2; //entrada
-    var precio3; //entrada
-    var promedio; //resultado a mostrar
+    var primerPrecio;
+    var segundoPrecio;
+    var tercerPrecio;
+    var sumaTotal;
+    var promedio;
 
-    //logica de programación
+    primerPrecio = txtIdPrecioUno.value;
+    primerPrecio = parseInt(primerPrecio);
 
-    precio1 = parseInt(document.getElementById("txtIdPrecioUno").value);
-    precio2 = parseInt(document.getElementById("txtIdPrecioDos").value);
-    precio3 = parseInt(document.getElementById("txtIdPrecioTres").value);
+    segundoPrecio = txtIdPrecioDos.value;
+    segundoPrecio = parseInt(segundoPrecio);
 
-    promedio = (precio1 + precio2 + precio3) / 3;
+    tercerPrecio = txtIdPrecioTres.value;
+    tercerPrecio = parseInt(tercerPrecio);
 
-    //Salida: mostrar promedio de los 3 precios
+
+    sumaTotal = primerPrecio + segundoPrecio + tercerPrecio;
+
+    promedio = sumaTotal / 3;
 
     alert("El promedio de los tres precios es: " + promedio);
-
 }
 function PrecioFinal() {
-    //declaracion de variables
 
-    var precio1; //entrada
-    var precio2; //entrada
-    var precio3; //entrada
-    var precioFinal;//resultado
+    var primerPrecio;
+    var segundoPrecio;
+    var tercerPrecio;
+    var sumaTotal;
+    var precioConIva;
 
-    //logica de programación
+    primerPrecio = txtIdPrecioUno.value;
+    primerPrecio = parseInt(primerPrecio);
 
-    precio1 = parseInt(document.getElementById("txtIdPrecioUno").value);
-    precio2 = parseInt(document.getElementById("txtIdPrecioDos").value);
-    precio3 = parseInt(document.getElementById("txtIdPrecioTres").value);
+    segundoPrecio = txtIdPrecioDos.value;
+    segundoPrecio = parseInt(segundoPrecio);
 
-    precioFinal = (precio1 + precio2 + precio3) * 1.21;
+    tercerPrecio = txtIdPrecioTres.value;
+    tercerPrecio = parseInt(tercerPrecio);
 
 
-    //Salida: mostrar suma de los tres precios más IVA (21%)
+    sumaTotal = primerPrecio + segundoPrecio + tercerPrecio;
 
-    alert("El precio final es: " + precioFinal);
+    precioConIva = sumaTotal * 1.21;//Incremento sumaTotal por 21 (IVA)
+
+
+    alert("El precio final con IVA es: " + precioConIva);
 }

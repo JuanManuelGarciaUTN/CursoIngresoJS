@@ -2,72 +2,83 @@
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt),realizar la operación correcta y 
 mostrar el resulto por medio de "ALERT"
-ej.: "la Resta es 750"*/ 
-function sumar()
-{	
+ej.: "la Resta es 750"*/
+function sumar() {
 	//declaracion de variables
-	var numero1; //entrada
-	var numero2; //entrada
+	var numeroUno; //entrada
+	var numeroDos; //entrada
 	var resultado; //resultado de la operacion
 
 	//logica de programacion
 
-	numero1 = parseInt(txtIdNumeroUno.value);
-	numero2 = parseInt(txtIdNumeroDos.value);
+	numeroUno = txtIdNumeroUno.value;
+	numeroUno = parseInt(numeroUno);
 
-	resultado = numero1 + numero2;
+	numeroDos = txtIdNumeroDos.value;
+	numeroDos = parseInt(numeroDos);
+
+	resultado = numeroUno + numeroDos;
 
 	//Salida: mostrar en pantalla resultado
-	alert("la Suma es " + resultado);	
+	alert("la Suma es " + resultado);
 }
 
-function restar()
-{
+function restar() {
 	//declaracion de variables
-	var numero1; //entrada
-	var numero2; //entrada
+	var numeroUno; //entrada
+	var numeroDos; //entrada
 	var resultado; //resultado de la operacion
 
 	//logica de programacion
-	numero1 = parseInt(txtIdNumeroUno.value);
-	numero2 = parseInt(txtIdNumeroDos.value);
+
+	numeroUno = txtIdNumeroUno.value;
+	numeroUno = parseInt(numeroUno);
+
+	numeroDos = txtIdNumeroDos.value;
+	numeroDos = parseInt(numeroDos);
 
 
-	resultado = numero1 - numero2;
+	resultado = numeroUno - numeroDos;
 
 	//Salida: mostrar en pantalla resultado
 	alert("la Resta es " + resultado);
 }
 
-function multiplicar()
-{ 
+function multiplicar() {
 	//declaracion de variables
-	var numero1; //entrada
-	var numero2; //entrada
+	var numeroUno; //entrada
+	var numeroDos; //entrada
 	var resultado; //resultado de la operacion
 
 	//logica de programacion
-	numero1 = parseInt(txtIdNumeroUno.value);
-	numero2 = parseInt(txtIdNumeroDos.value);
+
+	numeroUno = txtIdNumeroUno.value;
+	numeroUno = parseInt(numeroUno);
+
+	numeroDos = txtIdNumeroDos.value;
+	numeroDos = parseInt(numeroDos);
 
 	//Salida: mostrar en pantalla resultado
-	resultado = numero1 * numero2;
+	resultado = numeroUno * numeroDos;
 
 	alert("la Multiplicación es " + resultado);
 }
 
-function dividir()
-{
+function dividir() {
 	//declaracion de variables
-	var numero1; //entrada
-	var numero2; //entrada
+	var numeroUno; //entrada
+	var numeroDos; //entrada
 	var resultado; //resultado de la operacion
 
 	//logica de programacion
-	numero1 = parseInt(txtIdNumeroUno.value);
-	numero2 = parseInt(txtIdNumeroDos.value);
 
-	resultado = numero1 / numero2;
+	numeroUno = txtIdNumeroUno.value;
+	numeroUno = parseInt(numeroUno);
+
+	numeroDos = txtIdNumeroDos.value;
+	numeroDos = parseInt(numeroDos);
+
+	resultado = numeroUno / numeroDos;
 
 	//Salida: mostrar en pantalla resultado
 	alert("la División es " + resultado);

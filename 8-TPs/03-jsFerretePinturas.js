@@ -2,41 +2,38 @@
 A.	Al ingresar una temperatura en Fahrenheit debemos mostrar la temperatura en Centígrados con un mensaje concatenado (ej.: " 32 Fahrenheit son 0 centígrados").
 B.	Al ingresar una temperatura en Centígrados debemos mostrar la temperatura en Fahrenheit (ej.: "0  centígrados son 32 Fahrenheit ").
 */
-function FahrenheitCentigrados () 
-{
-	//(°F − 32) × 5/9 = °C
+function FahrenheitCentigrados() {
 
-    //declaracion de variables
 
     var fahrenheit; //entrada
     var centrigrados; //salida
 
-    //logica de programacion
 
-    fahrenheit = parseInt(document.getElementById("txtIdTemperatura").value);
-    centrigrados = (fahrenheit-32)*5/9;
+    fahrenheit = txtIdTemperatura.value;
+    fahrenheit = parseInt(fahrenheit);
+
+    //C° = (°F − 32) × 5/9 
+    centrigrados = (fahrenheit - 32) * 5 / 9;
 
     //salida: en °centigrados
-    
-    alert(fahrenheit+" Fahrenheit son "+centrigrados+" centigrados");
+
+    alert(fahrenheit + " grados fahrenheit son " + centrigrados + " grados centigrados");
 
 }
 
-function CentigradosFahrenheit () 
-{
-	// °C × 9/5 + 32 = °F
-
-    //declaracion de variables
+function CentigradosFahrenheit() {
 
     var centrigrados; //entrada
     var fahrenheit; //salida
 
-    //logica de programacion
 
-    centrigrados = parseInt(document.getElementById("txtIdTemperatura").value);
-    fahrenheit = centrigrados*9/5+32;
+    centrigrados = txtIdTemperatura.value;
+    centrigrados = parseInt(centrigrados);
 
-    //salida: en °centigrados
-    
-    alert(centrigrados+" centigrados son "+fahrenheit+" fahrenheit");
+    // F° = °C × 9/5 + 32
+    fahrenheit = centrigrados * 9 / 5 + 32;
+
+    //salida: en °fahrenheit
+
+    alert(centrigrados + " grados centigrados son " + fahrenheit + " grados fahrenheit");
 }

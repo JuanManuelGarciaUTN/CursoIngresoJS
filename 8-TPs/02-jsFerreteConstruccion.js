@@ -6,72 +6,63 @@ C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de c
 
 function Rectangulo() {
 
-    //declaracion de variables
+    var anchoTerreno;
+    var largoTerreno;
+    var perimetro;
+    var alambreTotal;
 
-    var largoTerreno; //entrada
-    var anchoTerreno; //entrada
+    anchoTerreno = txtIdAncho.value;
+    anchoTerreno = parseInt(anchoTerreno);
 
-    var perimetroRectangulo; //ancho*2 + largo*2
+    largoTerreno = txtIdLargo.value;
+    largoTerreno = parseInt(largoTerreno);
 
+    perimetro = largoTerreno * 2 + anchoTerreno * 2;
 
-    //logica de programacion
+    alambreTotal = perimetro * 3;
 
-    largoTerreno = parseInt(document.getElementById("txtIdLargo").value);
-    anchoTerreno = parseInt(document.getElementById("txtIdAncho").value);
-
-    perimetroRectangulo = largoTerreno * 2 + anchoTerreno * 2;
-
-    //salida: mostrar cantidad de alambre necesario
-
-    alert("Cantidad de alambre a comprar: " + (perimetroRectangulo * 3));
-
+    alert("La cantidad de alambre a comprar es: " + alambreTotal);
 }
 function Circulo() {
 
-    //declaracion variables
+    var radioTerreno;
+    var perimetro;
+    var alambreTotal;
 
-    var radioTerreno; //entrada
+    radioTerreno = txtIdRadio.value;
+    radioTerreno = parseInt(radioTerreno);
 
-    var perimetroCirculo; // 2*Pi*radio
+    perimetro = radioTerreno * 3.14159 * 2; //perimetro de un circulo Radio x Pi x 2
 
+    alambreTotal = perimetro * 3;
 
-    //logica de programacion
+    alert("La cantidad de alambre a comprar es: " + alambreTotal);
 
-    radioTerreno = parseInt(document.getElementById("txtIdRadio").value);
-    perimetroCirculo = 2 * 3.14159 * radioTerreno;
-
-    //salida: mostrar cantidad de alambre necesario
-
-    alert("Cantidad de alambre a comprar: " + (perimetroCirculo * 3));
 
 }
 function Materiales() {
 
-    //declaracion de variables
+    var anchoTerreno;
+    var largoTerreno;
 
-    var largoTerreno; //entrada
-    var anchoTerreno; //entrada
+    var area;
 
-    var areaRectangulo; //ancho * alto
+    var cantidadBolsasCemento;
+    var cantidadBolsasCal;
 
-    var bolsasCemento; //area*2
-    var bolsasCal;  //area*3
+    anchoTerreno = txtIdAncho.value;
+    anchoTerreno = parseInt(anchoTerreno);
 
-    //logica de programacion
+    largoTerreno = txtIdLargo.value;
+    largoTerreno = parseInt(largoTerreno);
+
+    area = largoTerreno * anchoTerreno;
 
 
-    largoTerreno = parseInt(document.getElementById("txtIdLargo").value);
-    anchoTerreno = parseInt(document.getElementById("txtIdAncho").value);
+    cantidadBolsasCemento = area * 2;
 
-    areaRectangulo = anchoTerreno * largoTerreno;
+    cantidadBolsasCal = area * 3;
 
-    bolsasCemento = areaRectangulo * 2;
-    bolsasCal = areaRectangulo * 3;
 
-    //salida: mostrar cantidad de bolsas
-
-    alert("Se necesitan:\n" +
-        "   ->Bolsas de Cemento " + bolsasCemento + "\n" +
-        "   ->Bolsas de Cal " + bolsasCal);
-
+    alert("Para las medidas del terreno rectangular se necesitan " + cantidadBolsasCemento + " bolsas de cemento y " + cantidadBolsasCal + " bolsas de cal.");
 }

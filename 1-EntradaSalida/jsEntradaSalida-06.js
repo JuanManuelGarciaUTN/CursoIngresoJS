@@ -6,22 +6,26 @@ Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
 
-function sumar()
-{
+function sumar() {
 
 	//declaracion de  variables
-	var numero1;	//entrada
-	var numero2;	//entrada
-	var resultado; //suma de los dos numeros
+	var numeroUno;	//entrada
+	var numeroDos;	//entrada
+	var suma; //suma de los dos numeros
 
 	//logica de programacion
 
-	numero1 = parseInt(txtIdNumeroUno.value);
-	numero2 = parseInt(txtIdNumeroDos.value);
+	numeroUno = txtIdNumeroUno.value;
+	numeroUno = parseInt(numero1);
 
-	resultado = numero1 + numero2;
+	numeroDos = txtIdNumeroDos.value;
+	numeroDos = parseInt(numero2);
+
+
+	suma = numeroUno + numeroDos;
 
 	//Salida: mostrar en pantalla con alert()
-	alert("la suma es "+resultado);
+	alert("la suma es " + suma);
+
 }
 
