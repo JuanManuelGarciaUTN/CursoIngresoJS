@@ -7,8 +7,97 @@ D.	Si compra 3  lamparitas bajo consumo marca "ArgentinaLuz"  el descuento es de
 E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de ingresos brutos en informar del impuesto con el siguiente mensaje:
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
 
+ Alumno: Garcia Juan Manuel
  */
 function CalcularPrecio () 
 {
- 	
+ 	var cantidadDeLamparas;
+
+    var marcaLampara;
+
+    var precio;
+    var porcentajeDescuento;
+    var descuento;
+
+    var ingresosBrutos;
+
+    porcentajeDescuento = 0;
+
+    //A
+
+    //asigno a cantidad de lamparitas
+    cantidadDeLamparas = txtIdCantidad.value;
+    cantidadDeLamparas = parseInt(cantidadDeLamparas);
+
+    //calculo precio sin descuentos
+    precio = cantidadDeLamparas * 35;
+
+    //asigno marcaLamparas por ID
+    marcaLampara = Marca.value;
+
+    //evaluo si recibe un descuento por cantidad
+    if(cantidadDeLamparas>5){//A
+        
+        porcentajeDescuento = 0.5;
+    }
+    else{//B
+        if(cantidadDeLamparas==5){
+            
+            if(marcaLampara == "ArgentinaLuz"){
+                
+                porcentajeDescuento = 0.4;
+            }
+            else{
+                
+                porcentajeDescuento = 0.3;
+            }
+        }
+        else{//C
+            if(cantidadDeLamparas==4){
+                if(marcaLampara == "ArgentinaLuz" || marcaLampara == "FelipeLamparas"){
+                    
+                    porcentajeDescuento = 0.25;
+                }
+                else{
+
+                    porcentajeDescuento = 0.20;
+                }
+            }
+            else{//D
+                if(cantidadDeLamparas==3){
+                    if(marcaLampara == "ArgentinaLuz"){
+                        porcentajeDescuento = 0.15;
+                    }
+                    else{
+                        if(marcaLampara=="FelipeLamparas"){
+                            porcentajeDescuento = 0.10;
+                        }
+                        else{
+                            porcentajeDescuento = 0.05;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //calculo descuento
+    descuento = precio * porcentajeDescuento;
+
+    //aplico descuento a precio
+    precio = precio - descuento;
+
+    //E
+    //evaluo si debe paga Ingresos Brutos
+    if(precio>120){
+
+        ingresosBrutos = precio * 0.10;
+
+        precio = precio + ingresosBrutos;
+
+        alert("IIBB Usted pago " + ingresosBrutos);
+    }
+
+    //asigno precio a caja en html por ID
+    txtIdprecioDescuento.value = precio;
 }
