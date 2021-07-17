@@ -5,9 +5,12 @@ se agregara un temporizador que
  correcto en ese lapso de tiempo. */
 var respuesta;
 var temporizador;
+
 function comenzar()
 {
-	
+	temporizador++;
+
+    txtIdPrimerNumero.value = temporizador;
 }//FIN DE LA FUNCIÓN
 function Responder()
 {

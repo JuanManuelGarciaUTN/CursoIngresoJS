@@ -33,7 +33,6 @@ function comenzar() {
 
 	txtIdIntentos.value = contadorIntentos;
 
-	alert(numeroSecreto);
 }
 
 function verificar() {
