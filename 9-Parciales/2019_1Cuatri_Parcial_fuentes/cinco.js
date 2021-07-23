@@ -1,122 +1,113 @@
+/**Parcial 2019 ejercicio 5
+Enunciado:
+Bienvenidos (SOLO WITCH).
+una empresa de viajes le solicita ingresar que continente le gustaria visitar
+y la cantidad de días , la oferta dice que por día se cobra $100 , que se puede pagar de todas las maneras
+Si es América tiene un 50% de descuento y si ademas paga por débito se le agrega un 10% mas de descuento
+Si es África tiene un 60% de descuento y si además paga por mercadoPago o efectivo se le agrega un 15% mas de descuento
+Si es Europa tiene un 20% de descuento y si ademas paga por débito se le agrega un 15% , por mercadoPago un 10% y cualquier otro medio 5%
+cualquier otro continente tiene un recargo del 20%
+
+Alumno: García Juan Manuel
+ */
 function mostrar() {
-    var continenteDelViaje;
-    var cantidadDeDias;
-    var metodoDePago;
-    var precioDelViaje;
-    var descuento;
-    var esValido;
+   
+    var destinoIngresado;
 
-    //asigno a contienteDelViaje el valor de la caja del html
-    continenteDelViaje = Marca.value;
+    var cantidadDeDiasViaje;
 
-    //pido al usuario que ingrese cantidad de dias del viaje
-    cantidadDeDias = prompt("Cuantos dias va a viajar");
-    cantidadDeDias = parseInt(cantidadDeDias);
+    var medioDePago;
 
-    //evaluo si la cantidad de dias es valida
-    if (cantidadDeDias < 1) {//si no es valida muestro EROR
-        alert("ERROR. Cantidad de días de viaje debe ser mayor a 0");
-    }
-    else {//Si es valida continuo
+    var precio;
 
-        //pido al usuario que ingrese el metodo de pago
-        metodoDePago = prompt("Ingrese metodo de pago:\n" +
-                                "-Efectivo\n" +
-                                "-Debito\n" +
-                                "-Mercado Pago\n" +
-                                "-Otro");
+    var porcentajeDeCambioAlPrecio;
+    var cambioAlPrecio;
 
-        //evaluo si el metodoDePago es valido
-        esValido = metodoDePago == "Efectivo" || metodoDePago == "Debito" || metodoDePago == "Mercado Pago" || metodoDePago == "Otro";
-        
-        if (!esValido) {//Si no es valido muestro ERROR
-            alert("ERROR, metodo de pago ingresado INVALIDO");
-        }
-        else {//Si es valido evaluo el ContinenteDelViaje
+    var mensaje;
 
-            //calculo el precioDelViaje antes de descuentos o recargos
-            precioDelViaje = cantidadDeDias * 100;
+    //Inicio
 
+    destinoIngresado = Marca.value;
 
-            //evaluo el continente al cual viaja
-            if(continenteDelViaje == "América"){//Si continente es America entro
+    cantidadDeDiasViaje = prompt("Ingrese cuantos días va a viajar");
+    cantidadDeDiasViaje = parseInt(cantidadDeDiasViaje);
 
-                //calculo el descuento segun corresponda
+    medioDePago = prompt("Ingrese medio de pago: \n"
+                           + "  -Debito\n"
+                           + "  -Mercado pago\n"
+                           + "  -Efectivo\n"
+                           + "  -Otro");
 
-                descuento = 0.5;//50% descuento
+    precio = 100 * cantidadDeDiasViaje;
 
-                if(metodoDePago=="Debito"){//Si metodo de pago es Debito entro
-                    descuento = descuento + 0.1;//10% descuento
-                }
-                
-                descuento = precioDelViaje * descuento;
+    //evaluo destinoIngresado
+    switch(destinoIngresado){
 
-                //despues de calcular el descuento lo resto al precio
+        case "América":
 
-                precioDelViaje = precioDelViaje - descuento;
+            switch(medioDePago){
 
-                //muestro el precio del viaje en pantalla
-                alert("El costo del viaje es "+precioDelViaje);
+                case "Debito":
+                    
+                    porcentajeDeCambioAlPrecio = -60;
+                break;
 
-            }//Si no es America
-            else if(continenteDelViaje == "África"){//Si es Africa
+                default:
 
-                //calculo el descuento segun corresponda
-
-                descuento = 0.6;//60% descuento
-
-                //evaluo si el metodo de pago tiene descuento adicional
-                if(metodoDePago=="Efectivo" || metodoDePago=="Mercado Pago"){
-                    descuento = descuento + 0.15;//15% descuento
-                }
-
-                descuento = precioDelViaje * descuento;
-
-                //despues de calcular el descuento lo resto al precio
-
-                precioDelViaje = precioDelViaje - descuento;
-
-                //muestro el precio del viaje en pantalla
-                alert("El costo del viaje es "+precioDelViaje);
-
-            }//Si tampoco es Africa
-            else if(continenteDelViaje == "Europa"){//Si es Europa
-                
-                //calculo el descuento segun corresponda
-
-                descuento = 0.2;//20% descuento
-
-                //evaluo si el metodo de pago tiene descuento adicional
-                if(metodoDePago=="Debito"){
-                    descuento = descuento + 0.15;//15% descuento
-                }
-                else{
-                    if(metodoDePago=="Mercado Pago"){
-                        descuento = descuento + 0.10;//10% descuento
-                    }
-                    else{
-                        descuento = descuento + 0.05;//5% descuento
-                    }
-                }
-
-                descuento = precioDelViaje * descuento;
-
-                //despues de calcular el descuento lo resto al precio
-
-                precioDelViaje = precioDelViaje - descuento;
-
-                //muestro el precio del viaje en pantalla
-                alert("El costo del viaje es "+precioDelViaje);
-
-            }//Si continente no es ninguna de las anteriores
-            else{
-
-                //El precio tiene un recargo del 20%
-                precioDelViaje = precioDelViaje * 1.2;//20% de recargo
-
-                //muestro el precio del viaje en pantalla
-                alert("El costo del viaje es "+precioDelViaje);
+                    porcentajeDeCambioAlPrecio = -50;
+                break;
             }
-        }
+        break;
+
+        case "África":
+
+            switch(medioDePago){
+
+                case "Efectivo":
+                case "Mercado pago":
+                    
+                    porcentajeDeCambioAlPrecio = -75;
+                break;
+
+                default:
+
+                    porcentajeDeCambioAlPrecio = -60;
+                break;
+            }
+        break;
+
+        case "Europa":
+
+            switch(medioDePago){
+
+                case "Debito":
+
+                    porcentajeDeCambioAlPrecio = -35;
+                break;
+                case "Mercado pago":
+                    
+                    porcentajeDeCambioAlPrecio = -30;
+                break;
+
+                default:
+
+                    porcentajeDeCambioAlPrecio = -25;
+                break;
+            }
+        break;
+
+        case "Asia":
+        case "Oceania":
+
+            porcentajeDeCambioAlPrecio = 20;
+        break;
     }
+
+    cambioAlPrecio = precio * porcentajeDeCambioAlPrecio / 100;
+
+    precio = precio + cambioAlPrecio;
+
+    mensaje = "El viaje a "+destinoIngresado+" por "+cantidadDeDiasViaje+" tiene un costo de "+precio+" con el medio de pago ingresado";
+
+    alert(mensaje);
 }

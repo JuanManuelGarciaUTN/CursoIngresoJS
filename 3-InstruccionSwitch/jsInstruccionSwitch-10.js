@@ -77,7 +77,9 @@ function mostrar() {
 		//Termina case Otoño
 	}
 
-	mensaje = mensaje + " a " + destinoIngresado + " en " + estacionIngresada;//No se viaja a "var destino" en "var temporada"
+	//(No) se viaja a (var destino) en (var temporada)
+	mensaje = mensaje + " a " + destinoIngresado + " en " + estacionIngresada;
+	
 	
 	alert(mensaje);
 
