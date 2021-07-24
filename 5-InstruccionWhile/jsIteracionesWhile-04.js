@@ -18,6 +18,7 @@ function mostrar()
 		alert("ERROR Numero fuera de Rango!!");
 
 		numeroIngresado = prompt("Reingrese un número entre 0 y 9.");
+		numeroIngresado = parseInt(numeroIngresado);
 	}
 
 	txtIdNumero.value = numeroIngresado;
