@@ -1,6 +1,12 @@
-/*
-Al presionar el botón pedir  números  hasta que el usuario quiera,
-mostrar el número máximo y el número mínimo ingresado.*/
+/*Ejercicio While 9
+
+Enunciado:
+Al presionar el botón pedir números hasta 
+que el usuario quiera, mostrar:
+el número máximo y el número mínimo ingresado. 
+
+Alumno: Garcia Juan Manuel
+*/
 function mostrar()
 {	// declarar variables
 	var numeroIngresado;
@@ -8,35 +14,40 @@ function mostrar()
 	var numeroMinimo;
 
 	var respuesta;
+	var flagPrimerIngreso;
 
-	numeroIngresado = prompt("Ingrese un numero");
-	numeroIngresado= parseInt(numeroIngresado);
+	flagPrimerIngreso = true;
 
-	numeroMaximo = numeroIngresado;
-
-	numeroMinimo = numeroIngresado;
-
-	respuesta = prompt("Si desea ingresar otro número ingrese: \nsi");
-
-	while(respuesta=="si"){
+	
+	do {
 
 		numeroIngresado = prompt("Ingrese un numero");
 		numeroIngresado= parseInt(numeroIngresado);
 
-		if(numeroIngresado < numeroMinimo){
+		if(flagPrimerIngreso){
 
+			numeroMaximo = numeroIngresado;
 			numeroMinimo = numeroIngresado;
+
+			flagPrimerIngreso = false;
 		}
 		else{
-			if(numeroIngresado > numeroMaximo){
+			if(numeroIngresado < numeroMinimo){
 
-				numeroMaximo = numeroIngresado;
+				numeroMinimo = numeroIngresado;
+			}
+			else{
+				if(numeroIngresado > numeroMaximo){
+	
+					numeroMaximo = numeroIngresado;
+				}
 			}
 		}
 
-		respuesta = prompt("Si desea ingresar otro número ingrese: \nsi");
-	}
+		respuesta = confirm("¿Desea Ingresar otro número?");
 
-	txtIdMaximo.value = "El máximo: " + numeroMaximo;
-	txtIdMinimo.value = "El mínimo: " + numeroMinimo;
+	} while (respuesta);
+
+	txtIdMaximo.value = "El máximo es: " + numeroMaximo;
+	txtIdMinimo.value = "El mínimo es: " + numeroMinimo;
 }//FIN DE LA FUNCIÓN

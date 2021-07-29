@@ -1,6 +1,12 @@
-/*
-Al presionar el botón pedir  números  hasta que el usuario quiera,
-sumar los que son positivos y multiplicar los negativos.*/
+/*Ejercicio While 8
+
+Enunciado:
+Al presionar el botón pedir números hasta que el
+usuario quiera, sumar los que son positivos y
+multiplicar los negativos. 
+
+Alumno: Garcia Juan Manuel
+*/
 function mostrar() {
 	var sumaAcumuladaPositivos;
 

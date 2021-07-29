@@ -30,7 +30,6 @@ function mostrar()
 
 		respuesta = prompt("Si desea ingresar otro número escriba: \nsi");
 		respuesta = respuesta.toLowerCase();
-
 	} while(respuesta=="si");
 
 	promedio = sumaAcumulada/contadorDeVueltas;
